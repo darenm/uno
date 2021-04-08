@@ -9,7 +9,6 @@ using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
@@ -30,13 +29,7 @@ namespace Uno.UI.Tests.Windows_UI_Xaml_Data.xBindTests.Controls
 			this.InitializeComponent();
 
 			DataContext = ViewModel = new TestViewModel() { ShowImages = true };
-
-			//Loaded += MainPage_Loaded;
 		}
-
-		//private void MainPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
-		//{
-		//}
 
 		public class TestViewModel : INotifyPropertyChanged
 		{
